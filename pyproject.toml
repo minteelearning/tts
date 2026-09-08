@@ -1,0 +1,18 @@
+[project]
+name = "mintee-mandarin-tts-api"
+version = "0.1.0"
+description = "Protected Mandarin MP3 synthesis API for Mintee"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "edge-tts>=7.2.8",
+    "fastapi>=0.141.0",
+    "uvicorn[standard]>=0.38.0",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.14.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
